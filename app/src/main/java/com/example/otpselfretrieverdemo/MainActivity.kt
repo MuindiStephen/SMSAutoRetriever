@@ -104,13 +104,6 @@ class MainActivity : AppCompatActivity() {
             message?.let { getOtpFromMessage(it) }
         }
     }
-//
-////        if (requestCode == REQ_USER_CONSENT) {
-////
-////
-////
-////        }
-//    }
 
     private fun getOtpFromMessage(message: String?) {
         val otpPattern = Pattern.compile("\\d{4}")

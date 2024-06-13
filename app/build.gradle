@@ -55,8 +55,4 @@ dependencies {
     // SMS retriever API
     implementation 'com.google.android.gms:play-services-auth:20.4.1'
     implementation 'com.google.android.gms:play-services-auth-api-phone:18.1.0'
-
-
-
-
 }
