@@ -24,6 +24,9 @@
         android:theme="@style/Theme.OTPSelfRetrieverDemo"
         tools:targetApi="31">
         <activity
+            android:name=".RealmDBActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -31,9 +34,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!--Register SMS broadcast receiver here-->
+        </activity> <!-- Register SMS broadcast receiver here -->
         <receiver
             android:name=".smsretriever.SmsBroadcastReceiver"
             android:exported="true">
@@ -41,10 +42,9 @@
                 <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
             </intent-filter>
             <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
-
     </application>
 
 </manifest>

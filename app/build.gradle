@@ -2,7 +2,8 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id 'io.gitlab.arturbosch.detekt'
-
+    id 'kotlin-kapt'
+   id 'realm-android'
 }
 
 android {
